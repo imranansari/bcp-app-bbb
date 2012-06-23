@@ -1,0 +1,39 @@
+<header>
+    <h2>Search {{name}}</h2>
+</header>
+
+
+<form class="" id="searchForm" action="">
+    <select style="width:100%" id="state">
+        <option value="0">Select State</option>
+        <option value="NC">NC</option>
+        <option value="NY">NY</option>
+    </select>
+
+    <select style="width:100%" id="city">
+        <option value="0">Select City</option>
+        <option value="NC">Greensboro</option>
+        <option value="NY">Durham</option>
+    </select>
+    <select style="width:100%" id="office">
+        <option value="0">Select Office</option>
+        <option value="NC">Office1</option>
+        <option value="NY">Office2</option>
+    </select>
+
+    <input type="text" name="development"  style="width: 98%" id="firstName" placeholder="First Name" value=""/>
+
+    <input type="tel" name="lot" style="width: 98%" id="lastname" placeholder="Last Name" value=""/>
+
+    <label class="radio">
+        <input type="radio" name="active_inactive_state" id="active" value="active" checked="">
+        Active
+    </label>
+
+    <label class="radio">
+        <input type="radio" name="active_inactive_state" id="inactive" value="inactive">
+        In Active
+    </label>
+
+    <button type="button" class="btn" style="float: right;" id="search">Search</button>
+</form>
