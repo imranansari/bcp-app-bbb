@@ -1,3 +1,18 @@
+## Project Setup
+
+* Install NodeJS
+* Install grunt
+* Install bbb
+    npm install -g bbb
+* Install handlebars
+    npm install handlebars
+
+
+Handlebars grunt task is under the tasks folder -> handlebars.js
+
+
+## This Project uses Backbone Boilerplate
+
 Backbone Boilerplate
 ====================
 
