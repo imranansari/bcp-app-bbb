@@ -10,6 +10,64 @@
 
 Handlebars grunt task is under the tasks folder -> handlebars.js
 
+## Config
+
+Add handlebars to the requirejs shim
+<code>
+        handlebars:{
+            deps:["jquery"],
+            exports:"Handlebars"
+        }
+ </code>
+
+
+## app.js
+<code>
+define([
+    // Libs
+    "jquery",
+    "lodash",
+    "backbone",
+    "handlebars"
+],
+
+    function ($, _, Backbone, Handlebars) {
+        return {
+            // This is useful when developing if you don't want to use a
+            // build process every time you change a template.
+            //
+            // Delete if you are using a different template loading method.
+            fetchTemplate:function (path, done) {
+                path = path + ".html";
+
+
+                var JST = window.JST = window.JST || {};
+
+                if (JST[path]) {
+                    return done(Handlebars.template(JST[path]));
+                }
+
+                $.get(path, function (contents) {
+                    var tmpl = Handlebars.compile(contents);
+
+                    done(JST[path] = tmpl);
+                }, "text");
+
+            },
+
+            // Create a custom object with a nested Views object
+            module:function (additionalProps) {
+                return _.extend({ Views:{} }, additionalProps);
+            },
+
+            // Keep active application instances namespaced under an app object.
+            app:_.extend({}, Backbone.Events)
+        };
+    });
+</code>
+
+
+
 
 ## This Project uses Backbone Boilerplate
 
@@ -23,14 +81,6 @@ very prescriptive; this boilerplate changes that.
 Organize your application in a logical filesystem, develop your
 Models/Collections/Views/Routers inside modules, and build knowing you have
 efficient code that will not bottleneck your users.
-
-Thanks to our
-[Contributors](https://github.com/tbranyen/backbone-boilerplate/contributors)!
-
-Special Thanks to: [cowboy](http://github.com/cowboy),
-[iros](http://github.com/iros), [nimbupani](http://github.com/nimbupani),
-[wookiehangover](http://github.com/wookiehangover), and
-[jugglinmike](http://github.com/jugglinmike)
 
 ## Documentation ##
 
