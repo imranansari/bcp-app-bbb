@@ -68,6 +68,8 @@ define([
 
 
 
+* List All App Modules in main.js
+
 
 ## This Project uses Backbone Boilerplate
 

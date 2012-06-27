@@ -11,9 +11,9 @@ define([
 
         });
 
-        Search.Collection = Backbone.Collection.extend({
+/*        Search.Collection = Backbone.Collection.extend({
 
-        });
+        });*/
 
         Search.Views.SearchCriteria = Backbone.View.extend({
             template:"app/templates/search",
@@ -37,9 +37,7 @@ define([
             },
 
             doSearch:function () {
-                console.log('a');
-                //console.log(Contactlist);
-                app.trigger('search', {"test":"imran"});
+                app.app.trigger('search', {"test":"imran"});
             }
 
         });

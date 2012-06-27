@@ -7,7 +7,8 @@ require([
     "backbone",
 
     //modules
-    "modules/search"
+    "modules/search",
+    "modules/searchResult"
 
 ],
 
@@ -38,7 +39,7 @@ require([
             app.router = new Router();
 
             // Trigger the initial route and enable HTML5 History API support
-            Backbone.history.start({ pushState:true });
+            Backbone.history.start();
         });
 
         // All navigation that is relative should be passed through the navigate

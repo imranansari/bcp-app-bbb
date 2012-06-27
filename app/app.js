@@ -18,9 +18,10 @@ define([
 
                 var JST = window.JST = window.JST || {};
 
-                if (JST[path]) {
+                // Doesnt work
+/*                if (JST[path]) {
                     return done(Handlebars.template(JST[path]));
-                }
+                }*/
 
                 $.get(path, function (contents) {
                     var tmpl = Handlebars.compile(contents);

@@ -1,0 +1,185 @@
+[class^="icon-"] {
+    background-image: url(/images/glyphicons-halflings.png) !important;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.mainContent {
+    font-size: 120%;
+    padding: 5px;
+}
+
+header {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    background-color: #aa1733;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#aa1733), to(#591620), color-stop(0.5, #73232f));
+    background: -moz-linear-gradient(top, #aa1733 0%, #73232f 50%, #591620 100%);
+    color: white;
+    font-family: 'Average';
+    font-size: 250%;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+header .appBar {
+    float: left;
+    padding-top: 3px;
+    width: 250px;
+}
+
+header .appBar .appTitle {
+    font-size: 17px;
+    font-weight: bold;
+    text-rendering: optimizelegibility;
+    color: white;
+    vertical-align: 30%;
+}
+
+.scolling_list_wrapper {
+    position: absolute !important;
+    z-index: 1;
+    top: 36px !important;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+}
+
+#info-slider div, ul, li {
+    margin: 0 !important;
+}
+
+.swipe {
+    padding-bottom: 20px !important;
+}
+
+.swipe li div, .swipe div div div {
+    background: maroon !important;
+    min-height: 300px !important;
+    color: #ffffff;
+}
+
+.scolling_list_wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+}
+
+.scolling_list_wrapper .scroller {
+    position: absolute;
+    z-index: 1;
+    /*	-webkit-touch-callout:none;*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    padding: 0;
+}
+
+.scolling_list_wrapper .scroller ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.scolling_list_wrapper .search {
+    background-color: #f6f5f2;
+    border: 1px #c0b6ab solid;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    width: 94%;
+}
+
+.scolling_list_wrapper .search .searchInput {
+    position: relative;
+    right: 2%;
+    left: 2%;
+    min-height: 25px;
+    width: 94%;
+    margin-top: .625em;
+}
+
+.list-view {
+    background: #f7f7f7;
+}
+
+.list-view li {
+    border-bottom: 1px #cccccc solid;
+    position: relative;
+}
+
+.list-view .title {
+    color: black;
+    font-size: 1.285em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 82%;
+}
+
+.list-view .subtext {
+    font-weight: normal;
+    color: #8e8c86;
+}
+
+.list-action a {
+    color: black;
+    display: block;
+    padding: 0.5em 0.785em 0.714em;
+    position: relative;
+    text-decoration: none;
+}
+
+.list-action a:active {
+    background-color: #daeffe;
+}
+
+.list-action a:after {
+    clip: rect(0 201px 20px 192px);
+    content: url(/images/sprite.png);
+    margin: -0.82em -3.5em 0 0;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.list-action .row-count {
+    -webkit-border-radius: 0.143em;
+    -moz-border-radius: 0.143em;
+    background: #6f0914;
+    border: 1px #841420 solid;
+    color: ebc466;
+    font-weight: bold;
+    position: absolute;
+    padding: 0.214em 0.429em;
+    right: 2.5em;
+    top: 50%;
+    margin-top: -1.1em;
+}
+
+.selectedRow {
+    background-color: #587992;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#587992), to(#314d62));
+    background: -moz-linear-gradient(top, #587992 0%, #314d62 100%);
+}
+
+.selectedRow .subtext {
+    color: #ffffff;
+}
+
+.selectedRow .title {
+    font-weight: bold;
+    color: #ffffff;
+}

@@ -1,1 +1,8 @@
 @import "h5bp.css";
+@import "bootstrap.css";
+@import "bootstrap-responsive.css";
+
+#main {
+padding: 0px;
+margin: 0px;
+}
