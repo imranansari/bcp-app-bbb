@@ -1,5 +1,5 @@
 [class^="icon-"] {
-    background-image: url(/images/glyphicons-halflings.png) !important;
+    background-image: url(/assets/images/glyphicons-halflings.png) !important;
 }
 
 html {
@@ -147,7 +147,7 @@ header .appBar .appTitle {
 
 .list-action a:after {
     clip: rect(0 201px 20px 192px);
-    content: url(/images/sprite.png);
+    content: url(/assets/images/sprite.png);
     margin: -0.82em -3.5em 0 0;
     overflow: hidden;
     position: absolute;

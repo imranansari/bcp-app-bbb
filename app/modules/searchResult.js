@@ -27,7 +27,6 @@ define([
                     " <a >" +
                     "<div class='title'>Homer J Simpson " + i + "</div>" +
                     "<div class='subtext'>Springfield, USA</div>" +
-                    "<span class='row-count'>5</span>" +
                     "</a>" +
                     "</li>");
             }
@@ -53,7 +52,7 @@ define([
                 });
 
             });
-        };
+        }
 
         app.app.on('search', function (data) {
             doSearch(data);
